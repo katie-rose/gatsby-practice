@@ -1,3 +1,3 @@
-# katierose.dev Portfolio
+## Katie-Rose.dev
 
-Built from scratch with [Gatsby](https://www.gatsbyjs.org/) and [Sanity.io](https://sanity.io). Following Jason Lengstorf's Byteconf JS demo.
+A portfolio site built with Gatsby.
