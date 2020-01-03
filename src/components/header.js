@@ -30,7 +30,7 @@ const Header = () => (
     `}
   >
     <NavLink to="/" fontWeight="bold">
-      FEM Workshop
+      Katie Rose Felten - Software Developer
     </NavLink>
     <nav
       css={css`
