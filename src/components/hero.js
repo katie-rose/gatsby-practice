@@ -4,9 +4,9 @@ import { Link, graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 
 const ImageBackground = styled(BackgroundImage)`
-  background-position: top 20% center;
-  background-size: cover;
-  height: 50vh;
+  background-position: top center;
+  background-size: auto;
+  height: 55vh;
   /* override the default margin for sibling elements  */
   + * {
     margin-top: 0;
@@ -23,12 +23,12 @@ const TextBox = styled('div')`
   width: 100%;
   h1 {
     text-shadow: 1px 1px 3px #eeddff66;
-    font-size: 2.25rem;
+    font-size: 1.45rem;
   }
   p,
   a {
     color: #222;
-    margin-top: 0;
+    margin-top: 5;
   }
   a {
     margin-top: 0.5rem;
@@ -38,7 +38,7 @@ const TextBox = styled('div')`
 const Hero = () => {
   const { image } = useStaticQuery(graphql`
     query {
-      image: file(relativePath: { eq: "nicole-harrington-mn.jpg" }) {
+      image: file(relativePath: { eq: "rose1.jpg" }) {
         sharp: childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
@@ -51,9 +51,9 @@ const Hero = () => {
   return (
     <ImageBackground Tag="section" fluid={image.sharp.fluid} fadeIn="soft">
       <TextBox>
-        <h1>A Title Appears &hearts;</h1>
+        <h1>Katie Rose Felten - Software Developer &hearts;</h1>
         <p>
-          What's up? <Link to="/about/">Learn about me &rarr;</Link>
+         Based in Atlanta, GA. <Link to="/about/">Learn about me &rarr;</Link>
         </p>
       </TextBox>
     </ImageBackground>
